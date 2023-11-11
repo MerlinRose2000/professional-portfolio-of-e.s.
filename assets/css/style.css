@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Times New Roman';
+    margin: auto;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  header {
+    padding: 50px;
+    text-align: center;
+    background: rgb(73, 4, 73);
+    color: purple;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: goldenrod;
+  }
+
+  .button {
+    width: 150px;
+    margin: 0 0.75%;
+    font-size: large;
+    color: white;
+    background-color: #bb8588;
+  }
+
+  nav a {
+    color: goldenrod;
+    padding: 16px;
+    text-decoration: dotted;
+    text-align: center;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  section {
+    flex: 3;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .images {
+    width: 25%;
+    height: 200px;
+    display: table;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0 4px;
+    clear: both;
+  }
+
+  .portraits {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .contactinfo {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px;
+  }
+  
+  .img:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  footer {
+    padding: 10px;
+    text-align: center;
+    background: rgb(73, 4, 73);
+    color: purple;
+  }
+  
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+    aside {
+      order: 2;
+    }
+    header {
+      background: goldenrod;
+    }
+    nav,
+    footer {
+      background-color: purple;
+    }
+  }
+  
